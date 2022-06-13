@@ -1,3 +1,14 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after { 
+	box-sizing: inherit;
+}
+
+
 :root {
 	--main-secondary-color: #757575;
 	--main-color: #212121;
@@ -15,6 +26,12 @@ body {
 	letter-spacing: 0.03em;
 	background-color: var(--main-backg-color);
 	font-size: 14px;
+}
+
+/* Margin - 0 */
+h1,h2,h3,h4,h5,h6,p,ul { 
+	margin: 0;
+	padding: 0;
 }
 
 /* Hide-titles */
@@ -35,6 +52,8 @@ body {
 
 /* hedear */
 /* logo */
+
+
 span {
 	font-family: "Raleway", sans-serif;
 	font-weight: 700;
@@ -46,6 +65,25 @@ span {
 }
 .logo-two {
 	color: var(--main-color);
+}
+
+
+/* Containers */
+
+
+.container { 
+	width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* ALL Sections */
+
+.section { 
+	padding-top: 94px;
+	padding-bottom: 94px;
 }
 
 /* LINKS */
@@ -88,23 +126,28 @@ span {
 
 /* bottons */
 .main-btn {
+	display: inline-block;
 	min-width: 200px;
+
+	border-radius: 4px;
+	border: 1px solid transparent;
 	/* height: 50px;
     left: 825px;
     top: 513px; */
+
 	background: var(--hover-color);
 	color: var(--main-backg-color);
 
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 1.88;
-	/* identical to box height, or 188% */
 
 	letter-spacing: 0.06em;
 
 	font-family: inherit;
 	cursor: pointer;
 }
+
 .main-btn:hover,
 .main-btn:focus {
 	background-color: var(--main-btn-color);
@@ -117,20 +160,26 @@ span {
 	font-weight: 900;
 	font-size: 44px;
 	line-height: 1.36;
-	/* or 136% */
-	text-align: center;
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
+	margin-bottom: 30px;
 }
+
+
 .hero-section {
 	background-color: var(--heder-backg-color);
+	text-align: center;
 }
+
+
 /* second-hero */
 .second-hero {
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.17;
 	text-align: center;
+
+	margin-bottom: 50px;
 }
 /* title - about */
 .title-about {
@@ -138,6 +187,8 @@ span {
 	font-weight: 700;
 	line-height: 1.42;
 	text-transform: uppercase;
+
+	padding-bottom: 10px;
 }
 
 /* TEAM */
@@ -150,6 +201,9 @@ span {
 	font-size: 16px;
 	line-height: 1.19;
 	text-align: center;
+
+	margin-top: 30px;
+	margin-bottom: 10px;
 }
 
 .team-foto {
@@ -161,6 +215,8 @@ span {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 19px;
+	
+	padding-bottom: 30px;
 }
 
 /* параграфи (Р)*/
@@ -228,7 +284,10 @@ span {
 }
 
 .second-btn {
-	border: none;
+	display: inline-block;
+	/* min-width: 73px; */
+	min-height: 38px;
+
 	font-family: inherit;
 	font-weight: 500;
 	font-size: 16px;
@@ -236,6 +295,9 @@ span {
 	text-align: center;
 	letter-spacing: 0.03em;
 	cursor: pointer;
+
+	border: none;
+	border-radius: 4px;
 }
 
 /* .btn-one {
