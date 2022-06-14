@@ -184,7 +184,8 @@ span {
 .main-btn {
 
 	display: inline-block;
-	min-width: 200px;
+	/* min-width: 200px; */
+	padding: 10px 32px;
 
 	border-radius: 4px;
 	border: 1px solid transparent;
