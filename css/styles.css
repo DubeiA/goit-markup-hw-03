@@ -52,6 +52,42 @@ h1,h2,h3,h4,h5,h6,p,ul {
 
 /* hedear */
 /* logo */
+.header { 
+	display: flex;
+
+	width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+
+	align-items: center;
+	
+}
+
+									/*  Важливо - зміни */
+.header .nav { 
+	display: flex;
+}
+.main-contacts {
+	display: flex;
+	margin-left: auto;
+}
+.main-contacts .decor-contacts + .decor-contacts { 
+	margin-left: 50px;
+}
+.header-nav {
+	display: flex;
+	
+}
+.decor-header { 
+	align-self: center;
+}
+
+.nav .list-link +.list-link { 
+	margin-left: 50px;
+}
+
 
 
 span {
@@ -59,12 +95,17 @@ span {
 	font-weight: 700;
 	font-size: 26px;
 	line-height: 1.19;
+
 }
+
+
 .logo {
+	
 	color: var(--hover-color);
 }
 .logo-two {
 	color: var(--main-color);
+	margin-right: 93px;
 }
 
 
@@ -92,6 +133,11 @@ span {
 	text-decoration: none;
 }
 /* navigation */
+						/* Важливо ( зміна )  */
+.nav {
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
 
 .nav .link {
 	color: var(--main-color);
