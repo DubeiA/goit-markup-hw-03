@@ -21,6 +21,7 @@ html {
 }
 
 body {
+
 	font-family: "Roboto", sans-serif;
 	color: var(--main-color);
 	letter-spacing: 0.03em;
@@ -30,6 +31,7 @@ body {
 
 /* Margin - 0 */
 h1,h2,h3,h4,h5,h6,p,ul { 
+
 	margin: 0;
 	padding: 0;
 }
@@ -55,15 +57,16 @@ h1,h2,h3,h4,h5,h6,p,ul {
 .header { 
 	display: flex;
 
+	border-bottom: 1px solid #ECECEC;
+	align-items: center;
+
 	width: 1200px;
 	padding-left: 15px;
 	padding-right: 15px;
 	margin-left: auto;
 	margin-right: auto;
 
-	border-bottom: 1px solid #ECECEC;
 	
-	align-items: center;
 	
 }
 
@@ -73,6 +76,7 @@ h1,h2,h3,h4,h5,h6,p,ul {
 }
 .main-contacts {
 	display: flex;
+
 	margin-left: auto;
 }
 .main-contacts .decor-contacts + .decor-contacts { 
@@ -105,6 +109,7 @@ span {
 	color: var(--hover-color);
 }
 .logo-two {
+
 	color: var(--main-color);
 	margin-right: 93px;
 }
@@ -164,6 +169,7 @@ span {
 	color: var(--main-secondary-color);
 }
 .contacts {
+
 	font-weight: 500;
 	line-height: 1.14px;
 	letter-spacing: 0.02em;
@@ -176,14 +182,12 @@ span {
 
 						/*Main botton */
 .main-btn {
+
 	display: inline-block;
 	min-width: 200px;
 
 	border-radius: 4px;
 	border: 1px solid transparent;
-	/* height: 50px;
-    left: 825px;
-    top: 513px; */
 
 	background: var(--hover-color);
 	color: var(--main-backg-color);
@@ -263,7 +267,6 @@ span {
 }
 
 
-
 								/* TEAM */
 
 .third-list { 
@@ -339,9 +342,11 @@ span {
 	color: var(--main-backg-color);
 }
 .logo-footet {
+	display: block;
+
 	padding-top: 60px;
 	margin-bottom: 20px;
-	display: block;
+	
 }
 .location:hover,
 .location:focus {
@@ -370,10 +375,11 @@ span {
 
 /* nav-buttons */
 .second-nav {
-	list-style: none;
 	display: flex;
 	justify-content: center;
 
+	list-style: none;
+	
 }
 
 .second-nav .portfolio-btn + .portfolio-btn {
@@ -397,8 +403,9 @@ span {
 
 .second-btn {
 	display: inline-block;
-	/* min-width: 73px; */
-	min-height: 38px;
+	
+	border: none;
+	border-radius: 4px;
 
 	font-family: inherit;
 	font-weight: 500;
@@ -410,8 +417,7 @@ span {
 
 	padding: 6px 22px;
 
-	border: none;
-	border-radius: 4px;
+	
 }
 
 /* .btn-one {
@@ -458,12 +464,13 @@ span {
 						/* portfolio-title */
 
 .portfolio-title {
+
+	color: var(--main-color);
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 2;
-	/* identical to box height, or 200% */
 	letter-spacing: 0.06em;
-	color: var(--main-color);
+	
 }
 
 /* list proposition */
