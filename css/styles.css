@@ -319,11 +319,14 @@ span {
 }
 
 												/* Footer!  */
-.adress {
+.address {
 	background-color: var(--heder-backg-color);
-	font-style: normal;
 	min-height: 252px;
-	
+
+}
+
+.adress {
+	font-style: normal;
 }
 
 .adress-nav .addres-item + .addres-item {
@@ -335,7 +338,7 @@ span {
 }
 .logo-footet {
 	margin-bottom: 20px;
-	
+	display: block;
 }
 .location:hover,
 .location:focus {
@@ -360,12 +363,25 @@ span {
 	color: rgba(255, 255, 255, 0.6);
 }
 
-/* PORTFOLIO  */
+												/* PORTFOLIO  */
 
 /* nav-buttons */
 .second-nav {
 	list-style: none;
+	display: flex;
+	justify-content: center;
 }
+
+.second-nav .portfolio-btn + .portfolio-btn {
+	margin-left: 8px;
+}
+
+.second-navigation {
+	
+	margin-bottom: 50px;
+	
+}
+
 .second-btn:hover,
 .second-btn:focus {
 	background-color: var(--hover-color);
@@ -410,7 +426,24 @@ span {
   
 } */
 
-/* portfolio-title */
+
+					/* group-proposition */
+
+.proposition {
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+
+.proposition-decor {
+	margin-right: 30px;
+}
+
+.proposition-decor:nth-child(3n) {
+	margin-right: 0;
+}
+
+						/* portfolio-title */
 
 .portfolio-title {
 	font-weight: 700;
