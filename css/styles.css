@@ -68,7 +68,7 @@ h1,h2,h3,h4,h5,h6,p,ul {
 }
 
 									/*  Важливо - зміни */
-.header .nav { 
+.nav { 
 	display: flex;
 }
 .main-contacts {
@@ -321,6 +321,7 @@ span {
 
 												/* Footer!  */
 .address {
+	
 	background-color: var(--heder-backg-color);
 	min-height: 252px;
 
@@ -338,6 +339,7 @@ span {
 	color: var(--main-backg-color);
 }
 .logo-footet {
+	padding-top: 60px;
 	margin-bottom: 20px;
 	display: block;
 }
@@ -405,7 +407,7 @@ span {
 	text-align: center;
 	letter-spacing: 0.03em;
 	cursor: pointer;
-	
+
 	padding: 6px 22px;
 
 	border: none;
