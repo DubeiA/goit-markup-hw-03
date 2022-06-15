@@ -18,9 +18,10 @@ html {
 	--main-section-color: #e5e5e5;
 	--secondary-section-color: #f5f4fa;
 	--main-btn-color: #188ce8;
+	--border-line: #ECECEC;
 }
 
-body {
+.Page {
 
 	font-family: "Roboto", sans-serif;
 	color: var(--main-color);
@@ -30,13 +31,14 @@ body {
 }
 
 /* Margin - 0 */
-h1,h2,h3,h4,h5,h6,p,ul { 
+
+h1,h2,h3,h4,h5,h6,p { 
 
 	margin: 0;
-	padding: 0;
+
 }
 
-								/* Hide-titles */
+						/* Hide-titles */
 
 .visually-hidden {
 	position: absolute;
@@ -52,25 +54,63 @@ h1,h2,h3,h4,h5,h6,p,ul {
 	overflow: hidden;
 }
 
-					/* hedear */
-					/* logo */
-.header { 
-	display: flex;
+					    	/* Списки */
+.list {
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+}
 
-	border-bottom: 1px solid #ECECEC;
-	align-items: center;
+/* IMAGE */
 
+img { 
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+						   /* Containers */
+
+
+.container { 
 	width: 1200px;
-	padding-left: 15px;
-	padding-right: 15px;
-	margin-left: auto;
-	margin-right: auto;
+	
+	padding: 15px 0;
+	margin: 0 auto;
+	
+}
 
+						  /* ALL Sections */
+
+.section { 
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+
+
+							/* LINKS decor*/
+
+
+
+.link-decor {
+	text-decoration: none;
 	
 	
 }
 
-									/*  Важливо - зміни */
+
+
+		         			/* hedear */
+
+.header { 
+	display: flex;
+	padding: 0;
+
+	align-items: center;
+
+}
+
+ /* -------------FLEX NAV--------------- */
 .nav { 
 	display: flex;
 }
@@ -84,70 +124,53 @@ h1,h2,h3,h4,h5,h6,p,ul {
 }
 .header-nav {
 	display: flex;
+	align-items: center;
 	
 }
-.decor-header { 
-	align-self: center;
-}
+
 
 .nav .list-link +.list-link { 
 	margin-left: 50px;
 }
 
+										/* LOGO */
+.logo { 
+	color: var(--hover-color);
 
-span {
+	font-family: "Raleway", sans-serif;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+	
+	
+}
+
+
+.logo-decor {
+	align-self: center;
+
+	color: var(--main-color);
+
 	font-family: "Raleway", sans-serif;
 	font-weight: 700;
 	font-size: 26px;
 	line-height: 1.19;
 
-}
-
-
-.logo {
-	
-	color: var(--hover-color);
-}
-.logo-two {
-
-	color: var(--main-color);
 	margin-right: 93px;
 }
 
-
-						/* Containers */
-
-
-.container { 
-	width: 1200px;
-	padding-left: 15px;
-	padding-right: 15px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-						/* ALL Sections */
-
-.section { 
-	padding-top: 94px;
-	padding-bottom: 94px;
-}
-.section-decor { 
-	margin-bottom: 94px;
-}
-
-							/* LINKS decor*/
-
-.link-decor {
-	text-decoration: none;
-}
 						/* navigation */
-						/* Важливо ( зміна )  */
+
 .nav {
+	margin-top: 32px;
+	margin-bottom: 32px;
+	
+}
+
+.link {
 	padding-top: 32px;
 	padding-bottom: 32px;
 }
-
 .nav .link {
 	color: var(--main-color);
 	font-weight: 500;
@@ -186,9 +209,10 @@ span {
 	display: inline-block;
 	/* min-width: 200px; */
 	padding: 10px 32px;
+	/* margin-top: 30px; */
 
 	border-radius: 4px;
-	border: 1px solid transparent;
+	border: none;
 
 	background: var(--hover-color);
 	color: var(--main-backg-color);
@@ -211,19 +235,31 @@ span {
 						/* HERO */
 
 .hero {
+
+	width: 696px;
+	margin:0 auto;
+
+	margin-bottom: 30px;
+
 	color: var(--main-backg-color);
 	font-weight: 900;
 	font-size: 44px;
 	line-height: 1.36;
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
-	margin-bottom: 30px;
+
+	
 }
 
 
 .hero-section {
-	background-color: var(--heder-backg-color);
+	
 	text-align: center;
+	padding-top: 200px;
+	padding-bottom: 200px;
+
+	background-color: var(--heder-backg-color);
+
 }
 
 
@@ -262,6 +298,12 @@ span {
 .second-list {
 	display: flex;
 }
+.section-decor { 
+	padding-bottom: 94px;
+}
+.section-decor > .container {
+	padding: 0;
+}
 
 .second-list .work-foto + .work-foto {
 	margin-left: 30px;
@@ -287,47 +329,71 @@ span {
 	font-size: 16px;
 	line-height: 1.19;
 	text-align: center;
-
-	margin-top: 30px;
 	margin-bottom: 10px;
+
+	/* margin-top: 30px; */
+	
 }
 
 .team-foto {
 	background-color: var(--main-backg-color);
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 0px 0px 4px 4px;
 }
 
 .team-content {
+
+	color: var(--main-secondary-color);
+	padding-top: 10px;
 	text-align: center;
-	font-weight: 400;
+	/* font-weight: 400; */
 	font-size: 16px;
-	line-height: 19px;
+	line-height: 1.19px;
 	
-	padding-bottom: 30px;
+	
+	/* padding-bottom: 30px; */
 }
+
+.team-decor { 
+	
+	padding: 30px 0;
+}
+
 
 										/* параграфи (Р)*/
 
-.content {
-	color: var(--main-secondary-color);
-}
+
 .main-content {
 	line-height: 1.71;
 }
 .second-content {
+	color: var(--main-secondary-color);
+	padding-top: 10px;
 	font-size: 16px;
 	line-height: 1.87;
 }
 
-											/* Списки */
-.list {
-	list-style: none;
-}
 
 												/* Footer!  */
 .address {
 	
 	background-color: var(--heder-backg-color);
-	min-height: 252px;
+	padding: 60px 0;
+
+}
+
+.decor-address {
+	display: block;
+	margin-bottom: 20px;
+
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19px;
+
+	letter-spacing: 0.03em;
+
 
 }
 
@@ -341,20 +407,20 @@ span {
 
 .logo-three {
 	color: var(--main-backg-color);
-}
-.logo-footet {
-	display: block;
-
-	padding-top: 60px;
-	margin-bottom: 20px;
 	
 }
+/* .logo-footet {
+
+	margin-bottom: 20px;
+	
+} */
 .location:hover,
 .location:focus {
 	color: var(--hover-color);
 }
 
 .location {
+	
 	color: var(--main-backg-color);
 	font-weight: 400;
 	line-height: 1.71;
@@ -368,29 +434,33 @@ span {
 .contact-footer {
 	font-weight: 400;
 	line-height: 1.71;
-	/* or 171% */
 	color: rgba(255, 255, 255, 0.6);
 }
 
 												/* PORTFOLIO  */
 
+
+
+												/* heder-porfolio */
+
+.header-line {
+  border-bottom: 1px solid var(--border-line);
+}
+
+
 /* nav-buttons */
+
 .second-nav {
 	display: flex;
 	justify-content: center;
 
-	list-style: none;
+	margin-bottom: 50px;
+
 	
 }
 
 .second-nav .portfolio-btn + .portfolio-btn {
 	margin-left: 8px;
-}
-
-.second-navigation {
-	
-	margin-bottom: 50px;
-	
 }
 
 
@@ -449,10 +519,16 @@ span {
 	flex-wrap: wrap;
 	
 }
+.decor-text {
+	padding: 10px;
+	
+}
 
 .proposition-decor {
+	/* margin-right: calc(100% -30px/ 3); */
 	margin-right: 30px;
 	margin-bottom: 30px;
+	border: 1px solid #EEEEEE;
 }
 
 .proposition-decor:nth-child(3n) {
