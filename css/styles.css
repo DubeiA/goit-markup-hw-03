@@ -74,8 +74,7 @@ img {
 
 .container { 
 	width: 1200px;
-	
-	padding: 15px 0;
+	padding: 0px 0px;
 	margin: 0 auto;
 	
 }
@@ -276,6 +275,7 @@ img {
 							 /* First-list */
 .first-list {
 	display: flex;
+	
 }
 /* .first-item { 
 	margin-right: 30px;
@@ -297,6 +297,7 @@ img {
 								/* Work foto */
 .second-list {
 	display: flex;
+	justify-content: space-between;
 }
 .section-decor { 
 	padding-bottom: 94px;
@@ -517,6 +518,8 @@ img {
 .proposition {
 	display: flex;
 	flex-wrap: wrap;
+	list-style: none;
+	justify-content: space-between;
 	
 }
 .decor-text {
@@ -551,9 +554,6 @@ img {
 }
 
 /* list proposition */
-.proposition {
-	list-style: none;
-}
 
 .portfolio-list {
 	text-decoration: none;
