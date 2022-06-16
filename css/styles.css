@@ -21,7 +21,7 @@ html {
 	--border-line: #ECECEC;
 }
 
-.Page {
+body {
 
 	font-family: "Roboto", sans-serif;
 	color: var(--main-color);
@@ -74,7 +74,7 @@ img {
 
 .container { 
 	width: 1200px;
-	padding: 0px 0px;
+	padding: 0px 15px;
 	margin: 0 auto;
 	
 }
@@ -94,7 +94,6 @@ img {
 .link-decor {
 	text-decoration: none;
 	
-	
 }
 
 
@@ -103,7 +102,6 @@ img {
 
 .header { 
 	display: flex;
-	padding: 0;
 
 	align-items: center;
 
@@ -191,7 +189,7 @@ img {
 	color: var(--main-secondary-color);
 }
 .contacts {
-
+	padding: 32px 0 ;
 	font-weight: 500;
 	line-height: 1.14px;
 	letter-spacing: 0.02em;
@@ -297,14 +295,12 @@ img {
 								/* Work foto */
 .second-list {
 	display: flex;
-	justify-content: space-between;
+	
 }
 .section-decor { 
 	padding-bottom: 94px;
 }
-.section-decor > .container {
-	padding: 0;
-}
+
 
 .second-list .work-foto + .work-foto {
 	margin-left: 30px;
@@ -315,7 +311,7 @@ img {
 
 .third-list { 
 	display: flex;
-	justify-content: space-between;
+	
 }
 
 .third-list .team-foto + .team-foto {
@@ -346,11 +342,11 @@ img {
 .team-content {
 
 	color: var(--main-secondary-color);
-	padding-top: 10px;
+	/* padding-top: 10px; */
 	text-align: center;
 	/* font-weight: 400; */
 	font-size: 16px;
-	line-height: 1.19px;
+	line-height: 1.19;
 	
 	
 	/* padding-bottom: 30px; */
@@ -369,8 +365,9 @@ img {
 	line-height: 1.71;
 }
 .second-content {
+	
 	color: var(--main-secondary-color);
-	padding-top: 10px;
+
 	font-size: 16px;
 	line-height: 1.87;
 }
@@ -519,12 +516,12 @@ img {
 .proposition {
 	display: flex;
 	flex-wrap: wrap;
-	list-style: none;
-	justify-content: space-between;
 	
 }
 .decor-text {
-	padding: 10px;
+	padding: 20px 24px;
+	border: 1px solid #EEEEEE;
+	border-top: none;
 	
 }
 
@@ -532,7 +529,7 @@ img {
 	/* margin-right: calc(100% -30px/ 3); */
 	margin-right: 30px;
 	margin-bottom: 30px;
-	border: 1px solid #EEEEEE;
+	/* border: 1px solid #EEEEEE; */
 }
 
 .proposition-decor:nth-child(3n) {
@@ -545,6 +542,8 @@ img {
 						/* portfolio-title */
 
 .portfolio-title {
+
+	margin-bottom: 4px;
 
 	color: var(--main-color);
 	font-weight: 700;
