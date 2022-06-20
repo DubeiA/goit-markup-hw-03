@@ -56,14 +56,14 @@ h1,h2,h3,h4,h5,h6,p {
 	overflow: hidden;
 }
 
-					    	/* Списки */
+/* ---------------------------Списки----------------- */
 .list {
 	list-style: none;
 	margin: 0;
 	padding-left: 0;
 }
 
-/* IMAGE */
+/* ------------------------ IMAGE --------------------*/
 
 img { 
 	display: block;
@@ -71,7 +71,7 @@ img {
 	height: auto;
 }
 
-						   /* Containers */
+/* ------------------------Containers ------------------*/
 
 
 .container { 
@@ -81,7 +81,7 @@ img {
 	
 }
 
-						  /* ALL Sections */
+/* -------------------------ALL Sections---------------- */
 
 .section { 
 	padding-top: 94px;
@@ -89,7 +89,7 @@ img {
 }
 
 
-							/* LINKS decor*/
+/* -------------------------LINKS decor------------------*/
 
 
 
@@ -100,7 +100,7 @@ img {
 
 
 
-		         			/* hedear */
+/*--------------------------- hedear ---------------------*/
 
 .header { 
 	display: flex;
@@ -109,7 +109,7 @@ img {
 
 }
 
- /* -------------FLEX NAV--------------- */
+ /* --------------------------FLEX NAV--------------------- */
 .nav { 
 	display: flex;
 }
@@ -132,7 +132,7 @@ img {
 	margin-left: 50px;
 }
 
-										/* LOGO */
+/* ----------------------------LOGO ------------------------*/
 .logo { 
 	color: var(--hover-color);
 
@@ -158,7 +158,7 @@ img {
 	margin-right: 93px;
 }
 
-						/* navigation */
+/* ---------------------------navigation -----------------------*/
 
 .nav {
 	margin-top: 32px;
@@ -186,7 +186,9 @@ img {
 	color: var(--hover-color);
 }
 
-						/* contacts */
+
+/* ------------------------------- contacts ----------------------*/
+
 .main-contacts .contacts {
 	color: var(--main-secondary-color);
 }
@@ -202,7 +204,8 @@ img {
 	color: var(--hover-color);
 }
 
-						/*Main botton */
+/*---------------------------------Main botton --------------------*/
+
 .main-btn {
 
 	display: inline-block;
@@ -231,7 +234,7 @@ img {
 	background-color: var(--main-btn-color);
 }
 
-						/* HERO */
+/* --------------------------------------HERO --------------------------*/
 
 .hero {
 
@@ -262,7 +265,8 @@ img {
 }
 
 
-						/* second-hero */
+/*-------------------------------------- second-hero ------------------------*/
+
 .second-hero {
 	font-weight: 700;
 	font-size: 36px;
@@ -272,7 +276,8 @@ img {
 	margin-bottom: 50px;
 }
 
-							 /* First-list */
+/* ----------------------------------First-list ---------------------------------*/
+
 .first-list {
 	display: flex;
 	
@@ -284,7 +289,10 @@ img {
 	margin-left: 30px;
 }
 
-						/* title - about */
+
+
+/* -------------------------------------title - about------------------------------*/
+
 .title-about {
 	font-size: 14px;
 	font-weight: 700;
@@ -294,7 +302,10 @@ img {
 	margin-bottom: 10px;
 }
 
-								/* Work foto */
+
+
+/* --------------------------------------Work foto-------------------------------- */
+
 .second-list {
 	display: flex;
 	
@@ -309,7 +320,8 @@ img {
 }
 
 
-								/* TEAM */
+/* -----------------------------------------TEAM----------------------------------- */
+
 
 .third-list { 
 	display: flex;
@@ -331,8 +343,7 @@ img {
 	text-align: center;
 	margin-bottom: 10px;
 
-	/* margin-top: 30px; */
-	
+
 }
 
 .team-foto {
@@ -344,14 +355,10 @@ img {
 .team-content {
 
 	color: var(--main-secondary-color);
-	/* padding-top: 10px; */
 	text-align: center;
-	/* font-weight: 400; */
 	font-size: 16px;
 	line-height: 1.19;
 	
-	
-	/* padding-bottom: 30px; */
 }
 
 .team-decor { 
@@ -360,7 +367,7 @@ img {
 }
 
 
-										/* параграфи (Р)*/
+/*------------------------------------ параграфи (Р)----------------------------*/
 
 
 .main-content {
@@ -375,7 +382,8 @@ img {
 }
 
 
-												/* Footer!  */
+/* ----------------------------------------- Footer! ----------------------------- */
+
 .address {
 	
 	background-color: var(--heder-backg-color);
@@ -410,7 +418,7 @@ img {
 	color: var(--main-backg-color);
 	
 }
-/* .logo-footet {
+/* logo-footet {
 
 	margin-bottom: 20px;
 	
@@ -438,18 +446,20 @@ img {
 	color: var(--contact-footer);
 }	
 
-												/* PORTFOLIO  */
+
+
+/* ----------------------------------------------------PORTFOLIO -------------------------------------------------- */
 
 
 
-												/* heder-porfolio */
+/* -----------------------------------heder-porfolio-------------------------------- */
 
 .header-line {
   border-bottom: 1px solid var(--border-line);
 }
 
 
-/* nav-buttons */
+/* --------------------------------------nav-buttons ---------------------------------*/
 
 .second-nav {
 	display: flex;
@@ -513,7 +523,7 @@ img {
 } */
 
 
-					/* group-proposition */
+/*--------------------------------------- group-proposition ----------------------------*/
 
 .proposition {
 	display: flex;
@@ -541,7 +551,9 @@ img {
 .proposition-decor:nth-last-child(-n + 3) {
 	margin-bottom: 0;
 }
-						/* portfolio-title */
+
+
+/*------------------------------------- portfolio-title -----------------------------------*/
 
 .portfolio-title {
 
@@ -555,7 +567,7 @@ img {
 	
 }
 
-/* list proposition */
+/*------------------------------------ list proposition ---------------------------------------*/
 
 .portfolio-list {
 	text-decoration: none;
